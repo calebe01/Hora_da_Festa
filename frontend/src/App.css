@@ -1,0 +1,74 @@
+/* App.css */
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.main-authenticated {
+  padding: 20px 10px;
+}
+
+.main-login {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form,
+.register-form {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2,
+.register-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-form input,
+.register-form input,
+.login-form button,
+.register-form button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.login-form button,
+.register-form button {
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+}
+
+.login-form button:hover,
+.register-form button:hover {
+  background-color: #2980b9;
+}
+
+h2,
+h2+button {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}

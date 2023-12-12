@@ -1,0 +1,142 @@
+
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Buffe",
+    "description": "Alimento bom e barato",
+    "price": 2900,
+    "image": "https://s2.glbimg.com/QwNU6Ym3mjWGCBMbr5422u39aGw=/620x413/smart/e.glbimg.com/og/ed/f/original/2022/02/17/como-higienizar-os-utensilios-de-limpeza-especialista-responde.jpg"
+}
+ 
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/654d4bd216b094db601cf759
+
+###
+DELETE http://localhost:3000/api/services/654d4bd216b094db601cf759
+
+###
+PUT http://localhost:3000/api/services/6578d49fc9a89d81846f33d8
+Content-Type: application/json
+
+{
+    "name": "Buffe",
+    "description": "Alimento bom e barato",
+    "price": 2900,
+    "image": "https://media-cdn.tripadvisor.com/media/photo-s/08/95/bc/8f/pong-buffe.jpg"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu Evento2",
+    "author": "Calebe",
+    "description": "festa de aniversario",
+    "budget": 9000,
+    "image": "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlZXxlbnwwfHwwfHx8MA%3D%3D",
+    "services": [
+        {
+            "name": "Buffet e Catering",
+            "description": "Serviço de comida e bebida",
+            "price": 1000,
+            "image": "https://media.istockphoto.com/id/177392719/pt/foto/almo%C3%A7o-esta%C3%A7%C3%A3o-de-servi%C3%A7o.jpg?s=2048x2048&w=is&k=20&c=pUxPGPu6ZfsPoJCMUHsbPNXe2PN9OIHC96miqjzENQg="
+        },
+        {
+            "name": "Entretenimento",
+            "description": "Contratação de bandas, DJs, artistas.",
+            "price": 999,
+            "image": "https://media.istockphoto.com/id/1136053521/pt/foto/dj-hand-mixing-on-controller.jpg?s=2048x2048&w=is&k=20&c=AP59WszSEBoxQpsrrXYWv7HK0F22ahFjQ1OFP7J6WrA="
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/656642c255bbfd9a8c2da210
+
+###
+DELETE http://localhost:3000/api/parties/656642c255bbfd9a8c2da210
+
+###
+PUT http://localhost:3000/api/parties/65761bb61b4a37944896f5a0
+Content-Type: application/json
+
+{
+    "title": "Confraternizacao de Calebe",
+    "author": "Calebe",
+    "description": "confra dos amigos de calebe",
+    "budget": 9000,
+    "image": "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlZXxlbnwwfHwwfHx8MA%3D%3D",
+    "services": [
+        {
+            "name": "Buffet e Catering",
+            "description": "Serviço de comida e bebida",
+            "price": 1000,
+            "image": "https://media.istockphoto.com/id/177392719/pt/foto/almo%C3%A7o-esta%C3%A7%C3%A3o-de-servi%C3%A7o.jpg?s=2048x2048&w=is&k=20&c=pUxPGPu6ZfsPoJCMUHsbPNXe2PN9OIHC96miqjzENQg="
+        },
+        {
+            "name": "Entretenimento",
+            "description": "Contratação de bandas, DJs, artistas.",
+            "price": 999,
+            "image": "https://media.istockphoto.com/id/1136053521/pt/foto/dj-hand-mixing-on-controller.jpg?s=2048x2048&w=is&k=20&c=AP59WszSEBoxQpsrrXYWv7HK0F22ahFjQ1OFP7J6WrA="
+        }
+    ]
+}
+
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+  "login": "Calebe",
+  "password": "calebe123",
+  "parties": ["657620e2572e3f904b531f31"]
+}
+
+###
+GET http://localhost:3000/api/users
+
+###
+GET http://localhost:3000/api/users/65762105572e3f904b531f35
+
+###
+DELETE http://localhost:3000/api/users/656642c255bbfd9a8c2da210
+
+###
+PUT http://localhost:3000/api/users/6566440b55bbfd9a8c2da212
+Content-Type: application/json
+
+{
+    "login": "usuario123",
+    "password": "senha456",
+    "parties": [
+        {
+    "title": "Meu Evento2",
+    "author": "Calebse",
+    "description": "festa de aniversario",
+    "budget": 9000,
+    "image": "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlZXxlbnwwfHwwfHx8MA%3D%3D",
+    "services": [
+        {
+            "name": "Algum servico 1",
+            "description": "Aqweqweqwecao",
+            "price": 3000,
+            "image": "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlZXxlbnwwfHwwfHx8MA%3D%3D"
+        },
+        {
+            "name": "alguem servico 2",
+            "description": "asddsa",
+            "price": 1600,
+            "image": "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlZXxlbnwwfHwwfHx8MA%3D%3D"
+        }
+    ]
+}
+    ]
+}
